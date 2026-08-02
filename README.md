@@ -390,7 +390,7 @@ cheatengine-x86_64.exe / cheatengine-i386.exe
 1. **反作弊兼容性**（上面那两步）
 2. **换装 / 配置写回** —— 在 VTS 里改配置，卸载再挂载，配置是否还在
 3. **打包工具在真实模型上的路径兼容性** —— 各种命名的素材
-4. **大模型 + 长时间挂载** —— 我只测过 90 MB / 20 分钟，更大更久的没测过
+4. **大模型 + 长时间挂载** —— 我只测过 90 MB / 253 分钟，更大更久的没测过
 5. 任何**挂载失败**、**崩溃**、**VTS 加载不出模型**
 6. **你能不能绕过 DRM** —— 认真的，找到了请告诉我
 
@@ -398,17 +398,9 @@ cheatengine-x86_64.exe / cheatengine-i386.exe
 
 ## 关于源码
 
-**本仓库只发布二进制成品，不公开源码。** 授权条款见 [LICENSE](LICENSE) —— 简单说：欢迎你装来测、欢迎为找漏洞而逆向，但不要再分发或商用。
+**本仓库只发布二进制成品，不公开源码。** 授权条款见 [LICENSE](LICENSE) 
 
-客户端是 C++20 / Win32 / Dokany，`/W4 /WX` 零警告构建，当前有 12 个自动化测试套件覆盖密码派生、块解密、畸形包拒绝、路径索引、限流语义等：
-
-```
-secure_buffer      key_derivation      dek_pool           decrypt_block
-package_read       vts_mountpoint      virtual_path_index shadow_store
-read_rate_limiter  self_integrity      malformed_archive  vreq_export
-```
-
-对实现细节有疑问（比如"你怎么保证不联网""密钥到底存哪"）欢迎开 Issue 问，我可以贴相关代码片段说明。
+> 简单说：欢迎你装来测、欢迎为找漏洞而逆向，但不要再分发或商用。
 
 ---
 
@@ -420,7 +412,7 @@ read_rate_limiter  self_integrity      malformed_archive  vreq_export
 | BoringSSL | Apache 2.0 |
 | xorstr | Apache 2.0 |
 
-客户端完整许可全文见随附 `THIRD-PARTY-NOTICES.txt`（程序内点版权行也能打开）。打包工具依赖 Python / cryptography / Pillow 等，许可见其各自声明。
+客户端完整许可全文见随附 `THIRD-PARTY-NOTICES.txt`（程序内点版权行也能打开）。
 
 ---
 
