@@ -232,7 +232,7 @@ ZwCreateFile(open): 非授权进程(PID=15784, type=1) 被拒
 
 ### 一个你们会想到的追问：签名校验会不会偷偷联网？
 
-会问这个说明你懂行 —— `WinVerifyTrust` 默认可能去查证书吊销列表（CRL/OCSP），那是真的网络请求。
+`WinVerifyTrust` 默认可能去查证书吊销列表（CRL/OCSP），那是真的网络请求。
 
 代码里明确关掉了：
 
