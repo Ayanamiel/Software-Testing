@@ -2,7 +2,8 @@
 
 **Live2D 模型的离线加密分发方案** 
 
-> 画师把模型打成加密包，只有指定的那一个 Windows 账户能解开并挂载给 VTube Studio 使用。模型明文全程不落地。
+> 画师把模型打成加密包，只有指定的那一个 Windows 账户能解开并挂载给 VTube Studio 使用。
+> 模型明文全程不落地。
 
 Windows x64 · 客户端 C++20 / Win32 / Dokany · 打包工具 Python 3.14
 
