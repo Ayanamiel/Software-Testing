@@ -414,7 +414,7 @@ cheatengine-x86_64.exe / cheatengine-i386.exe
 | BoringSSL | Apache 2.0 |
 | xorstr | Apache 2.0 |
 
-客户端完整许可全文见随附 `THIRD-PARTY-NOTICES.txt`（程序内点版权行也能打开）。
+完整许可全文在**安装后的程序目录**里（`THIRD-PARTY-NOTICES.txt`），也可以点主界面左下角版权行 → 「关于」框 → 「查看完整许可」打开。仓库里不放这个文件。
 
 ---
 
